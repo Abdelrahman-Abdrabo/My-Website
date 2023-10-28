@@ -9,6 +9,7 @@
   <meta name="keywords" content="global, template, html, sass, jquery">
   <meta name="author" content="Bucky Maler">
   <link rel="stylesheet" href="./index_files/main.css">
+  <link rel="icon" href="./assets/img/logo.icon" type="image/x-icon"/>
 </head>
 <body>
 
@@ -37,15 +38,15 @@
         </header>
         <nav class="l-side-nav">
           <ul class="side-nav">
-            <li class=""><span>Home</span></li>
-            <li class="is-active"><span>Works</span></li>
+            <li class="is-active"><span>Home</span></li>
+            <li class=""><span>Works</span></li>
             <li class=""><span>About</span></li>
             <li class=""><span>Contact</span></li>
             <li class=""><span>Hire us</span></li>
           </ul>
         </nav>
         <ul class="l-main-content main-content">
-          <li class="l-section section">
+          <li class="l-section section section--is-active">
             <div class="intro">
               <div class="intro--banner">
                 <h1>Hi There<br>I'm Abdarbo<br>Pentester</h1>
@@ -75,7 +76,7 @@
               </div>
             </div>
           </li>
-          <li class="l-section section section--is-active">
+          <li class="l-section section ">
             <div class="work">
               <h2>Selected work</h2>
               <div class="work--lockup">
@@ -179,10 +180,10 @@
             <div class="hire section--prev">
               <h2>You want me to do</h2>
               <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request">
+              <form class="work-request" action="mailto:abdelrahmanabdrabo123@gmail.com" method="post" enctype="text/plain">
                 <div class="work-request--options">
                   <span class="options-a">
-                    <input id="opt-1" type="checkbox" value="app design">
+                    <input id="opt-1" type="checkbox" name="Request" value="I need app design">
                     <label for="opt-1">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
                       <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
@@ -191,7 +192,7 @@
                       </svg>
                       App Design
                     </label>
-                    <input id="opt-2" type="checkbox" value="graphic design">
+                    <input id="opt-2" type="checkbox" name="Request" value="I need graphic design">
                     <label for="opt-2">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
                       <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
@@ -200,7 +201,7 @@
                       </svg>
                       Graphic Design
                     </label>
-                    <input id="opt-3" type="checkbox" value="motion design">
+                    <input id="opt-3" type="checkbox" name="Request" value="I need motion design">
                     <label for="opt-3">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
                       <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
@@ -211,7 +212,7 @@
                     </label>
                   </span>
                   <span class="options-b">
-                    <input id="opt-4" type="checkbox" value="ux design">
+                    <input id="opt-4" type="checkbox" name="Request" value="I need ux design">
                     <label for="opt-4">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
                       <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
@@ -220,7 +221,7 @@
                       </svg>
                       UX Design
                     </label>
-                    <input id="opt-5" type="checkbox" value="webdesign">
+                    <input id="opt-5" type="checkbox" name="Request" value="I need webdesign">
                     <label for="opt-5">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
                       <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
@@ -229,7 +230,7 @@
                       </svg>
                       Webdesign
                     </label>
-                    <input id="opt-6" type="checkbox" value="marketing">
+                    <input id="opt-6" type="checkbox" name="Request" value="I need marketing">
                     <label for="opt-6">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
                       <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
@@ -242,11 +243,11 @@
                 </div>
                 <div class="work-request--information">
                   <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
+                    <input id="name" type="text" name="Name" spellcheck="false">
                     <label for="name">Name</label>    
                   </div>
                   <div class="information-email">
-                    <input id="email" type="email" spellcheck="false">
+                    <input id="email" type="email" name="Email" spellcheck="false">
                     <label for="email">Email</label>
                   </div>
                 </div>
@@ -259,8 +260,8 @@
     </div>
   </div>
   <ul class="outer-nav">
-    <li class="">Home</li>
-    <li class="is-active">Works</li>
+    <li class="is-active">Home</li>
+    <li class="">Works</li>
     <li class="">About</li>
     <li class="">Contact</li>
     <li class="">Hire me</li>
