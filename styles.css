@@ -1,0 +1,92 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Importing a monospaced font */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    font-family: 'VT323', monospace;
+    background-color: #1e1e1e;
+    color: #00ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: left;
+}
+
+.terminal {
+    background-color: #000;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 80%;
+    max-width: 800px;
+}
+
+.terminal-header {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+}
+
+.terminal-header .buttons {
+    display: flex;
+}
+
+.terminal-header .button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ff5f56; /* red button */
+    margin-right: 8px;
+}
+
+.terminal-header .button.minimize {
+    background-color: #ffbd2e; /* yellow button */
+}
+
+.terminal-header .button.maximize {
+    background-color: #27c93f; /* green button */
+}
+
+.terminal-body {
+    padding: 10px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.terminal-body pre {
+    white-space: pre-wrap;
+}
+
+.terminal-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.terminal-input .prompt {
+    margin-right: 5px;
+}
+
+#command-input {
+    background: none;
+    border: none;
+    color: #00ff00;
+    font-family: 'VT323', monospace;
+    font-size: 16px;
+    outline: none;
+    flex-grow: 1;
+}
+
+.command-output {
+    color: #00aaff; /* Blue color for executed commands */
+}
